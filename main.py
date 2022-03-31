@@ -17,7 +17,7 @@ def test_multi():
     loop_pos = 1
     url = URL1
     while True:
-        print("Loop " + str(loop_pos))
+        print(f"Loop {str(loop_pos)}")
         crw = Crawler(url)
 
         prices = crw.get_values_between('<td class="searchResultsPriceValue">', '</div>')
@@ -28,7 +28,7 @@ def test_multi():
         if next_url == "":
             return
         print(next_url)
-        url = "http://sahibinden.com" + next_url
+        url = f"http://sahibinden.com{next_url}"
         loop_pos += 1
 
 test_multi()
