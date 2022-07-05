@@ -5,8 +5,9 @@ from luta import text_finder
 
 class Crawler():
     """ Crawler class """
-    def __init__(self, url: str):
+    def __init__(self, url: str, wait_element: str = ""):
         self._url = url
+        self._wait_element = wait_element
         self._html = ""
         self._call_url()
 

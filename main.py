@@ -31,4 +31,5 @@ def test_multi():
         url = f"http://sahibinden.com{next_url}"
         loop_pos += 1
 
-test_multi()
+if __name__ == "__main__":
+    test_single()
